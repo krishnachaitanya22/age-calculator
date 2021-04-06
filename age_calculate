@@ -1,0 +1,15 @@
+#import datetime module
+import datetime     
+
+#taking input from user
+year=int(input('enter your bitrh year'))
+month=int(input('enter your bitrh month'))
+day=int(input('enter your bitrh day'))
+
+#here assigning values
+dob=datetime.datetime(year , month, day )
+now=datetime.datetime.now()
+age= now-dob
+age=age.days
+age=age//365 
+print(f'now you are {age} years old' )
